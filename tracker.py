@@ -14,9 +14,9 @@ import math
 
 def get_args():
     parser = argparse.ArgumentParser(description="CLI tool for motion tracking using Background Subtraction.")
-    parser.add_argument("--input", required=True, help="Path to the input video file.")
-    parser.add_argument("--output-vid", required=False, help="Path to save the processed video with bounding boxes.")
-    parser.add_argument("--log", required=True, help="Path to save the output text file containing motion timestamps.")
+    parser.add_argument("--input", required=False, default="test_video.mp4", help="Path to the input video file (default: test_video.mp4).")
+    parser.add_argument("--output-vid", required=False, default="processed_video.mp4", help="Path to save the processed video (default: processed_video.mp4).")
+    parser.add_argument("--log", required=False, default="motion_events.txt", help="Path to save the output text file (default: motion_events.txt).")
     parser.add_argument("--min-area", type=int, default=500, help="Minimum contour area to be considered actual motion (to ignore small noise).")
     return parser.parse_args()
 
