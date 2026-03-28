@@ -4,7 +4,7 @@ A motion tracking system in real-time that was constructed using classical compu
 ---
 
 ## Demo
-![Motion Detection Output](output_images/demo.jpg) *(Replace with actual output image)*
+![Motion Detection Output](output_images/demo.jpg)
 
 ---
 
